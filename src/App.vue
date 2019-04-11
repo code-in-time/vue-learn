@@ -1,8 +1,12 @@
 <template>
   <div id="app">
-    test
+    test <br /><br />
+    {{id}} {{name}} {{title}}
     <top />
-    <bottom />
+    <bottom v-bind:thrID="testItHereClass1" v-on:emt-AddToData="doThis" />
+    <ul v-for="x in data" :key="x">
+      <li>{{x}}</li>
+    </ul>
   </div>
 </template>
 
@@ -15,6 +19,23 @@ export default {
   components: {
     top,
     bottom
+  },
+  props: {
+    thrID: String
+  },
+  data() {
+    return {
+      id: 1,
+      name: 'test',
+      title: 'the title',
+      data: ['a','b']
+    }
+  },
+  methods:{
+    doThis(x) {
+      console.log(x)
+      this.data.push(x)
+    }
   }
 }
 </script>
