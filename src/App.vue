@@ -1,12 +1,7 @@
 <template>
   <div class="container">
 
-    <div class="row">
-      <div class="col">
-        test <br /><br />
-        {{id}} {{name}} {{title}}
-     </div>
-    </div>
+    <headingElm />
 
     <div class="row">
       <div class="col">
@@ -29,12 +24,14 @@
 <script>
 import top from './components/top'
 import bottom from './components/bottom'
+import headingElm from './components/headingElm'
 
 export default {
   name: 'app',
   components: {
     top,
-    bottom
+    bottom,
+    headingElm
   },
   props: {
     thrID: String
