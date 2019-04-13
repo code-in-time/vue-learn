@@ -1,24 +1,22 @@
 <template>
-  <div class="top">
-    test
+<div class="row">
+  <div class="col">
+    <div class="alert alert-primary" role="alert">A simple primary alert—check it out!</div>
   </div>
+</div>
 </template>
 
 <script>
-
-
 export default {
-  name: 'top',
-  components: {
-
-  }
-}
+  name: "top",
+  components: {}
+};
 </script>
 
 <style scoped>
-  .top {
-    background: green;
-    height: 30px;
-    width: 100%;
-  }
+.top {
+  background: green;
+  height: 30px;
+  width: 100%;
+}
 </style>
