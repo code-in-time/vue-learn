@@ -11,7 +11,7 @@
 
     <div class="row">
       <div class="col">
-      <bottom v-bind:thrID="testItHereClass1" v-on:emt-AddToData="doThis" />
+      <formSubmitElm v-bind:thrID="testItHereClass1" v-on:emt-AddToData="doThis" />
       <ul v-for="x in data" :key="x" class="list-group">
         <li class="list-group-item">{{x}}</li>
       </ul>
@@ -23,14 +23,14 @@
 
 <script>
 import top from './components/top'
-import bottom from './components/bottom'
+import formSubmitElm from './components/formSubmitElm'
 import headingElm from './components/headingElm'
 
 export default {
   name: 'app',
   components: {
     top,
-    bottom,
+    formSubmitElm,
     headingElm
   },
   props: {

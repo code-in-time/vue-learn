@@ -26,7 +26,7 @@
 
 
 export default {
-  name: 'bottom',
+  name: 'formSubmitElm',
   components: {
 
   },
@@ -48,9 +48,5 @@ export default {
 </script>
 
 <style scoped>
-  .bottom {
-    background: yellow;
-    height: 30px;
-    width: 100%;
-  }
+
 </style>
