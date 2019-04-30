@@ -11,7 +11,7 @@
 
 <script>
 export default {
-    name: "header",
+    name: "headingElm",
     props: ["id", "name", "title"]
 };
 </script>
